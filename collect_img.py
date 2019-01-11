@@ -48,7 +48,7 @@ while True:
         #we want to show the cropped image so we use cv2.imshow(name_of_window,image)
         cv2.imshow('Face Cropper',faces)
     else:#that means simply face not found 
-        print(count)
+        print("face not found")
         pass#pass that message
     #------we need a condition where camera stop capturing shots so either ENTER(ASCII VALUE OF ENTER IS 13) get clicked or some maximum value of images 
     if cv2.waitKey(1)==13 or count==100:
